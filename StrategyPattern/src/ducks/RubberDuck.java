@@ -1,22 +1,15 @@
 package ducks;
 
-import behavior.Duck;
-import behavior.FlyBehavior;
-import behavior.QuackBehavior;
-import fly.FlyWithNoWings;
-import quack.MuteQuack;
-import quack.Quack;
+import fly.FlyNoWay;
 import quack.Squeak;
 
 public class RubberDuck extends Duck {
 
     public RubberDuck() {
-        duckName="Rubber Duck";
-        flyBehavior = new FlyWithNoWings();
-        quackBehavior = new Squeak();
+        super("Rubber Duck",new FlyNoWay(),new Squeak());
     }
     @Override
     public void display() {
-        System.out.println("I'm a "+duckName+"!");
+        System.out.println("I'm a Rubber Duck!");
     }
 }

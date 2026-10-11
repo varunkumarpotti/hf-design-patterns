@@ -1,20 +1,15 @@
 package ducks;
 
-import behavior.Duck;
-import behavior.FlyBehavior;
-import behavior.QuackBehavior;
-import fly.FlyWithNoWings;
+import fly.FlyWithWings;
 import quack.Quack;
 
 public class RedHeadDuck extends Duck {
 
     public RedHeadDuck() {
-        duckName="Red Head Duck";
-        flyBehavior = new FlyWithNoWings();
-        quackBehavior = new Quack();
+        super("Red Head Duck",new FlyWithWings(), new Quack());
     }
     @Override
     public void display() {
-        System.out.println("I'm a "+duckName+"!");
+        System.out.println("I'm a Red Head Duck!");
     }
 }
