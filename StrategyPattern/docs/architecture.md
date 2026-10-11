@@ -17,5 +17,15 @@ We have Design Principles.
     affecting those that don't. "
 * Program to an interface, not an implementation. (class declaring them doesn't need to know about the actual object)
 
+* Favor composition over inheritance.
+  creating systems using composition gives you a lot more flexibility. Not only does it let you encapsulate a family 
+  of algorithms into their own set of classes, but it also lets you change behavior at runtime as long as the object you're composing with implements the correct behaviour interface.
+
 [New Architecture](./architectureDiagram.drawio)
+
+Strategy Pattern.
+-----------------
+
+Defines a family of algorithms, encapsulates each one, and make them interchangeable. Strategy lets the algorithm vary 
+independently of clients that use it.
 
