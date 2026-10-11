@@ -19,8 +19,8 @@ public abstract class Duck {
 
     public abstract void display();
 
-    public void swim(){
-        System.out.println("All ducks float, even decoys!");
+    public void swim(String duckName){
+        System.out.println(duckName+" is swimming...!");
     }
 
     public void performFly(){
@@ -37,4 +37,6 @@ public abstract class Duck {
     public void setQuackBehavior(QuackBehavior quackBehavior){
         this.quackBehavior = Objects.requireNonNull(quackBehavior,"QuackBehavior cannot be null!");
     }
+
+    public String getDuckName(){return duckName;}
 }

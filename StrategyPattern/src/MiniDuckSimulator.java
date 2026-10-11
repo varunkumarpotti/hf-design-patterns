@@ -1,7 +1,4 @@
-import ducks.Duck;
-import ducks.DecoyDuck;
-import ducks.MallardDuck;
-import ducks.RubberDuck;
+import ducks.*;
 import fly.FlyRocketPowered;
 import quack.Squeak;
 
@@ -28,5 +25,11 @@ public class MiniDuckSimulator {
         rubber.display();
         rubber.performQuack();
         rubber.performFly();
+
+        Duck redHead = new RedHeadDuck();
+        redHead.display();
+        redHead.swim(redHead.getDuckName());
+        redHead.performQuack();
+        redHead.performFly();
     }
 }
